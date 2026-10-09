@@ -73,9 +73,3 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-1E88E5?style=for-the-badge&logo=javascript&logoColor=white)
 
----
-
-<div align="center">
-  <sub>Profile views:</sub><br/>
-  <img src="https://visitcount.itsvg.in/api?id=JustPrzemek&icon=0&color=2" alt="Visitors Count" />
-</div>
