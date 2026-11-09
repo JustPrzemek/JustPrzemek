@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./assets/terminal.svg" alt="przemek@github:~$ whoami — Przemysław Kubas, Associate Software Engineer" width="100%" />
+  <img src="./assets/terminal.svg" alt="przemek@github:~$ whoami — Przemysław Kubas, Software Engineer" width="100%" />
 
   <br/>
 
