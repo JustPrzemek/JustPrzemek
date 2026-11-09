@@ -99,8 +99,10 @@ PROMPT = '<tspan class="user">przemek@github</tspan>:<tspan class="path">~</tspa
 
 
 def command(y, cmd, delay):
-    return (f'<text x="24" y="{y}" class="c" style="animation-delay:{delay:.2f}s">'
-            f'{PROMPT}<tspan class="cmd">{escape(cmd)}</tspan></text>')
+    # the .cover rect hides the command and shrinks to the right -> "typing" effect
+    return (f'<g class="c" style="animation-delay:{delay:.2f}s">'
+            f'<text x="24" y="{y}">{PROMPT}<tspan class="cmd">{escape(cmd)}</tspan></text>'
+            f'<rect class="cover" x="172" y="{y - 14}" width="{len(cmd) * 9 + 12}" height="20"/></g>')
 
 
 def build_dynamic(user, y, delay):
