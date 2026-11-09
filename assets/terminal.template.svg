@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="{{HEIGHT}}" viewBox="0 0 860 {{HEIGHT}}" role="img" aria-label="Terminal: Przemysław Kubas — Software Engineer">
+  <style>
+    text { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'DejaVu Sans Mono', monospace; font-size: 14px; fill: #c9d1d9; white-space: pre; }
+    .title { font-size: 12px; fill: #8b949e; }
+    .user { fill: #3fb950; font-weight: bold; }
+    .path { fill: #58a6ff; font-weight: bold; }
+    .cmd  { fill: #e6edf3; }
+    .muted { fill: #8b949e; }
+    .dir  { fill: #d2a8ff; font-weight: bold; }
+    .hl   { fill: #ffa657; }
+    .bold { font-weight: bold; }
+    .accent { fill: #79c0ff; }
+
+    .l { opacity: 0; animation: show 0.01s linear forwards; }
+    .c { opacity: 0; clip-path: inset(0 100% 0 0); animation: type 0.6s steps(18, end) forwards; }
+    .cursor { animation: blink 1s step-end infinite; }
+
+    @keyframes show { to { opacity: 1; } }
+    @keyframes type { 0% { opacity: 1; clip-path: inset(0 100% 0 0); } 100% { opacity: 1; clip-path: inset(0 0 0 0); } }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .l, .c { opacity: 1; clip-path: none; animation: none; }
+      .cursor { animation: none; }
+    }
+  </style>
+
+  <!-- window -->
+  <rect x="0.5" y="0.5" width="859" height="{{INNER_HEIGHT}}" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <path d="M10.5 0.5 H849.5 A10 10 0 0 1 859.5 10.5 V36 H0.5 V10.5 A10 10 0 0 1 10.5 0.5 Z" fill="#161b22"/>
+  <line x1="0.5" y1="36" x2="859.5" y2="36" stroke="#30363d"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f56"/>
+  <circle cx="42" cy="18" r="6" fill="#ffbd2e"/>
+  <circle cx="62" cy="18" r="6" fill="#27c93f"/>
+  <text x="430" y="22" text-anchor="middle" class="title">przemek@github: ~</text>
+  <text x="836" y="22" text-anchor="end" class="title">updated {{UPDATED}}</text>
+
+  <!-- $ whoami -->
+  <text x="24" y="66" class="c" style="animation-delay:0.2s"><tspan class="user">przemek@github</tspan>:<tspan class="path">~</tspan>$ <tspan class="cmd">whoami</tspan></text>
+  <text x="24" y="88" class="l" style="animation-delay:0.9s"><tspan class="hl">Przemysław Kubas</tspan> — Software Engineer</text>
+
+  <!-- $ cat about.md -->
+  <text x="24" y="124" class="c" style="animation-delay:1.3s"><tspan class="user">przemek@github</tspan>:<tspan class="path">~</tspan>$ <tspan class="cmd">cat about.md</tspan></text>
+  <text x="24" y="146" class="l" style="animation-delay:2.0s"><tspan class="accent">›</tspan> Java &amp; Spring backend developer</text>
+  <text x="24" y="168" class="l" style="animation-delay:2.15s"><tspan class="accent">›</tspan> B.Sc. Computer Science · M.Sc. Cybersecurity student</text>
+  <text x="24" y="190" class="l" style="animation-delay:2.3s"><tspan class="accent">›</tspan> Into backend development &amp; system architecture — designing systems end to end</text>
+  <text x="24" y="212" class="l" style="animation-delay:2.45s"><tspan class="accent">›</tspan> Exploring AI &amp; agentic systems — secure use of Claude &amp; LLM agents in real workflows</text>
+  <text x="24" y="234" class="l" style="animation-delay:2.6s"><tspan class="accent">›</tspan> Building backend systems and Java-based applications</text>
+
+  <!-- $ ls ~/stack -->
+  <text x="24" y="270" class="c" style="animation-delay:3.0s"><tspan class="user">przemek@github</tspan>:<tspan class="path">~</tspan>$ <tspan class="cmd">ls ~/stack/*</tspan></text>
+  <text x="24" y="292" class="l" style="animation-delay:3.7s"><tspan class="dir">backend/      </tspan>  java  spring-boot  hibernate  jakarta-ee  kafka  maven</text>
+  <text x="24" y="314" class="l" style="animation-delay:3.85s"><tspan class="dir">databases/    </tspan>  postgresql  mongodb  redis  flyway</text>
+  <text x="24" y="336" class="l" style="animation-delay:4.0s"><tspan class="dir">quality/      </tspan>  junit5  mockito  sonarqube  coderabbit</text>
+  <text x="24" y="358" class="l" style="animation-delay:4.15s"><tspan class="dir">security/     </tspan>  spring-security  jwt  wireshark</text>
+  <text x="24" y="380" class="l" style="animation-delay:4.3s"><tspan class="dir">cloud/        </tspan>  aws  docker  kubernetes  jenkins  github-actions</text>
+  <text x="24" y="402" class="l" style="animation-delay:4.45s"><tspan class="dir">observability/</tspan>  prometheus  grafana</text>
+  <text x="24" y="424" class="l" style="animation-delay:4.6s"><tspan class="dir">tools/        </tspan>  intellij-idea  git  postman  swagger  claude-code</text>
+  <text x="24" y="446" class="l" style="animation-delay:4.75s"><tspan class="dir">os/           </tspan>  linux (omarchy)  windows  bash</text>
+  <text x="24" y="468" class="l" style="animation-delay:4.9s"><tspan class="dir">learning/     </tspan>  java-architecture  distributed-systems  angular  typescript</text>
+
+  <!-- $ cat now.txt -->
+  <text x="24" y="504" class="c" style="animation-delay:5.3s"><tspan class="user">przemek@github</tspan>:<tspan class="path">~</tspan>$ <tspan class="cmd">cat now.txt</tspan></text>
+  <text x="24" y="526" class="l" style="animation-delay:6.0s">Focused on solid system architecture — designing durable,</text>
+  <text x="24" y="548" class="l" style="animation-delay:6.15s">scalable backend systems that are built to last.</text>
+
+  <!-- DYNAMIC y=548 delay=6.15 — everything below is generated by scripts/generate_stats.py -->
+  {{DYNAMIC}}
+</svg>
